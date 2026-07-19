@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Meetup Scraper 2026",
-  "version": "1.2",
-  "description": "Exporte les participants d'un événement Meetup en CSV.",
+  "version": "2.0",
+  "description": "Exporte en CSV tous les participants des événements passés d'un groupe Meetup (events récupérés automatiquement, CSV enrichi).",
   "permissions": ["activeTab", "scripting"],
   "host_permissions": ["https://www.meetup.com/*"],
   "action": {
@@ -17,11 +17,5 @@
     "16": "icon16.png",
     "32": "icon32.png",
     "128": "icon192.png"
-  },
-  "content_scripts": [
-    {
-      "matches": ["https://www.meetup.com/*"],
-      "js": ["content.js"]
-    }
-  ]
+  }
 }
